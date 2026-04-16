@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Profile</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: #0277bd;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar img {
+            width: 80px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar a {
+            display: block;
+            color: #0277bd;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 10px;
+            background: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background:rgb(92, 154, 189);
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+            width: calc(100% - 270px);
+        }
+        .header {
+            background: #0277bd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .profile-container {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px #0277bd;
+            border-radius: 8px;
+        }
+        .profile-container h2 {
+            border-bottom: 2px solid #0277bd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .profile-info p {
+            margin: 10px 0;
+        }
+        .view-grade-btn {
+            width: 100%;
+            padding: 12px 20px;
+            background-color: #0277bd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .view-grade-btn:hover {
+            background-color: #01579b;
+        }
+        .grades-container {
+            display: none;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for Buttons */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Header */
+        h2 {
+            color: #090909;
+            font-size: 24px;
+        }
+
+        /* Topic Button Section */
+        .topics {
+            margin-top: 20px;
+        }
+
+        /* Styling for Topic Buttons */
+        .topic-btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background: white;
+            color: #0277bd;
+            border: 2px solid #0277bd;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hover Effect */
+        .topic-btn:hover {
+            background: #0277bd;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .topic-btn {
+                width: 80%;
+                padding: 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="image1.png" alt="Profile Picture">
+        <h2>Ankita Anand</h2>
+        <a href="homepage.php">Home</a>
+        <a href="index.php">Sign Out</a>
+    </div>
+
+    <div class="main-content">
+        
+        <button class="view-grade-btn" onclick="$('#grades').slideToggle()">View Grade</button>
+
+        <div class="container">
+           <h2>Mathematics</h2>
+            <div class="topics">
+                <a href="http://localhost/logee1/results.php" class="topic-btn">Division</a>
+                <a href="commutative_property.php" class="topic-btn">Commutative Property</a>
+                <a href="polygon.php" class="topic-btn">Polygon</a>
+                <a href="place_value.php" class="topic-btn">Place Value</a>
+                <a href="proportion.php" class="topic-btn">Proportion</a>
+                <a href="positive_integer.php" class="topic-btn">Positive Integer</a>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h2>Science</h2>
+         
+            <div class="topics">
+                <h2>Chemistry<h2>
+                <a href="https://docs.google.com/forms/d/18IlXS_3xWWEHOfkPsOxbr43S0mffsF73pXiqRdwiyL0/edit#response=ACYDBNjDKIoVQn80RaDt-mh4R2KEOkmjnITKWShNvBUvB2CpYaZmFpSTGA9gQxpbsZAxLQo" class="topic-btn">Photosynthesis</a>
+                <a href="commutative_property.php" class="topic-btn">Alcohols</a>
+                <a href="polygon.php" class="topic-btn">Fundamentals of chemistry</a>
+                <a href="place_value.php" class="topic-btn">Fundamentals of unit of life</a>
+                <a href="proportion.php" class="topic-btn">Structure of molecules</a>
+                <a href="positive_integer.php" class="topic-btn">Physical states of matter</a>
+            </div>
+            <div class="topics">
+                <h2>Biology<h2>
+                <a href="https://docs.google.com/forms/d/18IlXS_3xWWEHOfkPsOxbr43S0mffsF73pXiqRdwiyL0/edit#response=ACYDBNjDKIoVQn80RaDt-mh4R2KEOkmjnITKWShNvBUvB2CpYaZmFpSTGA9gQxpbsZAxLQo" class="topic-btn">Photosynthesis</a>
+                <a href="commutative_property.php" class="topic-btn">Plant kingdom</a>
+                <a href="polygon.php" class="topic-btn">Animal kingdom</a>
+                <a href="place_value.php" class="topic-btn">Human Reproduction </a>
+                <a href="proportion.php" class="topic-btn">Plant reproduction</a>
+                <a href="positive_integer.php" class="topic-btn">living system</a>
+            </div>
+            <div class="topics">
+                <h2>Physics<h2>
+                <a href="https://docs.google.com/forms/d/18IlXS_3xWWEHOfkPsOxbr43S0mffsF73pXiqRdwiyL0/edit#response=ACYDBNjDKIoVQn80RaDt-mh4R2KEOkmjnITKWShNvBUvB2CpYaZmFpSTGA9gQxpbsZAxLQo" class="topic-btn">Motion</a>
+                <a href="commutative_property.php" class="topic-btn">Work</a>
+                <a href="polygon.php" class="topic-btn">Energy</a>
+                <a href="place_value.php" class="topic-btn">Gravitation</a>
+                <a href="proportion.php" class="topic-btn">Forces and Law of Motion</a>
+                <a href="positive_integer.php" class="topic-btn">Sound</a>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
