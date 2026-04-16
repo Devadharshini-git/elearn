@@ -3,6 +3,7 @@ version: "3.8"
 services:
   web:
     build: .
+    container_name: php_app
     ports:
       - "8080:80"
     volumes:
@@ -12,9 +13,10 @@ services:
 
   db:
     image: mysql:5.7
+    container_name: mysql_db
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: learning_db
     ports:
-      - "3306:3306"
+      - "3307:3306"
