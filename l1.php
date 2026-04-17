@@ -62,7 +62,7 @@
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/Wmue3DqRKzM" allowfullscreen></iframe>
             <p>Division</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBNUip0VvGGR7QxUhTe86sPFUXrTrOlc19VjbJ7dlIgvMArA/viewform?usp=header" class="quiz-button">Take Quiz</a>
+            <a href="https://youtu.be/ccfxt67U2-Y?si=U5DHXHsn_Knljj8l" class="quiz-button">Take Quiz</a>
             
         </div>
         <div class="video-container">
